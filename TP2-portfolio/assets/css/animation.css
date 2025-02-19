@@ -1,0 +1,62 @@
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  transform: translateY(20px);
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.timeline-item.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.timeline-item.right {
+  transform: translateX(50px);
+}
+
+.timeline-item.right.active {
+  transform: translateX(0);
+}
+
+.skill-card {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.skill-card.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.experience-card {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.experience-card.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.projects-grid .project-card {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.projects-grid .project-card.active {
+  opacity: 1;
+  transform: translateY(0);
+}
