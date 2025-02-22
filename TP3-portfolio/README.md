@@ -2,6 +2,8 @@
 
 This is my personal portfolio website. I am a Full Stack Developer and AI Enthusiast. The website showcases my skills, education, professional experience, and projects.
 
+> **🌐 Live Portfolio:** [Click here to view my portfolio](https://otmanetouhami.github.io/portfolio/)
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -34,13 +36,13 @@ This portfolio website is designed to provide an overview of my professional bac
 To set up the project locally, follow these steps:
 
 1. Clone the repository:
-   ```sh
-   git clone https://github.com/OtmaneTouhami/portfolio.git
-   ```
-2. Navigate to the project directory:
     ```sh
-    cd portfolio
+    git clone https://github.com/OtmaneTouhami/portfolio.git
     ```
+2. Navigate to the project directory:
+     ```sh
+     cd portfolio
+     ```
 
 ### Usage
 Open the `index.html` file in your web browser to view the website.
