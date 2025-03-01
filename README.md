@@ -49,6 +49,13 @@ Seven exercises covering JavaScript fundamentals:
 6. Fibonacci Sequence Calculator
 7. Square Root Calculator using Numerical Method
 
+### [Lab 5: JavaScript Events](TP5-events)
+Four mini-applications demonstrating event handling and DOM manipulation:
+1. Simple Calculator - Basic arithmetic operations
+2. Advanced Scientific Calculator - Complex mathematical functions and operations
+3. BMI Calculator - Calculates body mass index and health classification
+4. Value Permutation - Demonstrates variable swapping with destructuring
+
 ## Getting Started
 
 Clone the repository:
@@ -64,7 +71,8 @@ web-technologies/
 ├── TP1-HTML/                     # HTML basics lab
 ├── TP2-Google Homepage Clone/    # Google homepage recreation
 ├── TP3-portfolio/                # Personal portfolio website
-└── TP4-Introduction To JavaScript/ # JavaScript exercises
+├── TP4-Introduction To JavaScript/ # JavaScript exercises
+└── TP5-events/                   # JavaScript event handling applications
 ```
 
 ## Technologies Used
