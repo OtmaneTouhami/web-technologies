@@ -6,4 +6,4 @@ let fahrenheit = Number(prompt("Enter the temperature in Fahrenheit"));
 let celsius = degreC(fahrenheit);
 
 console.log(`Une température en Fahrenheit: ${fahrenheit.toFixed(1)}`);
-console.log(`tte température équivaut a ${celsius.toFixed(1)} degrés Celsius`);
+console.log(`La température équivaut a ${celsius.toFixed(1)} degrés Celsius`);
