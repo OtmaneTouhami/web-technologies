@@ -357,6 +357,12 @@ angular-auth-system/
 ## Setup and Installation
 
 1. Clone the repository
+
+```
+git clone https://github.com/OtmaneTouhami/web-technologies.git
+cd TP6-React_Angular/angular-auth-system
+```
+
 2. Install dependencies:
 
 ```
