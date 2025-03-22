@@ -1,0 +1,23 @@
+/* Error Message Styling */
+.error-message {
+  background: #dc2626;
+  color: #fee2e2;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+  margin-top: 1rem;
+  border: 1px solid #fca5a5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+/* Password Match Indicator */
+.password-match {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}

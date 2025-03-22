@@ -1,0 +1,60 @@
+<div class="auth-container">
+  <div class="brand-section">
+    <div class="brand-content">
+      <img src="assets/enset_logo.png" alt="ENSET Logo" class="brand-logo" />
+      <h1>ENSET</h1>
+      <p>École Normale Supérieure de l'Enseignement Technique</p>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <div class="auth-card">
+      <div class="form-header">
+        <img src="assets/enset_logo.png" alt="ENSET Logo" class="brand-logo" />
+        <h2>User Login</h2>
+      </div>
+      <div class="form-body">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+            <label class="form-label">Username</label>
+            <input
+              type="text"
+              class="form-input"
+              formControlName="username"
+              [class.invalid]="loginForm.get('username')?.invalid && (loginForm.get('username')?.touched || submitted)"
+            />
+            <div *ngIf="loginForm.get('username')?.invalid && (loginForm.get('username')?.touched || submitted)"
+                 class="error-message">
+              <span *ngIf="loginForm.get('username')?.errors?.['required']">
+                Username is required
+              </span>
+
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-input"
+              formControlName="password"
+              [class.invalid]="loginForm.get('password')?.invalid && (loginForm.get('password')?.touched || submitted)"
+            />
+            <div *ngIf="loginForm.get('password')?.invalid && (loginForm.get('password')?.touched || submitted)"
+                 class="error-message">
+              <span *ngIf="loginForm.get('password')?.errors?.['required']">
+                Password is required
+              </span>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Sign In</button>
+        </form>
+        <p style="margin-top: 1rem">
+          New User? <a class="link-text" routerLink="/signup">Create Account</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

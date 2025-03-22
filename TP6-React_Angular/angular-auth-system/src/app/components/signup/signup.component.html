@@ -1,0 +1,82 @@
+<div class="auth-container">
+  <div class="brand-section">
+    <div class="brand-content">
+      <img src="assets/enset_logo.png" alt="ENSET Logo" class="brand-logo" />
+      <h1>ENSET</h1>
+      <p>École Normale Supérieure de l'Enseignement Technique</p>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <div class="auth-card">
+      <div class="form-header">
+        <img src="assets/enset_logo.png" alt="ENSET Logo" class="brand-logo" />
+        <h2>Create New Account</h2>
+      </div>
+      <div class="form-body">
+        <div *ngIf="errorMessage" class="error-messag">{{ errorMessage }}</div>
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label class="form-label">Username</label>
+            <input
+              type="text"
+              class="form-input"
+              formControlName="username"
+              required
+            />
+            <div *ngIf="signupForm.get('username')?.errors?.['required'] &&
+                      (signupForm.get('username')?.touched || signupForm.get('username')?.dirty)"
+                 class="error-message">
+              Username is required
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-input"
+              formControlName="password"
+              required
+            />
+            <div *ngIf="signupForm.get('password')?.errors?.['required'] &&
+                      (signupForm.get('password')?.touched || signupForm.get('password')?.dirty)"
+                 class="error-message">
+              Password is required
+            </div>
+            <div *ngIf="signupForm.get('password')?.errors?.['minlength'] &&
+                      (signupForm.get('password')?.touched || signupForm.get('password')?.dirty)"
+                 class="error-message">
+              Password must be at least 6 characters
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Confirm Password</label>
+            <input
+              type="password"
+              class="form-input"
+              formControlName="confirmPassword"
+              required
+            />
+            <div *ngIf="signupForm.get('confirmPassword')?.errors?.['required'] &&
+                      (signupForm.get('confirmPassword')?.touched || signupForm.get('confirmPassword')?.dirty)"
+                 class="error-message">
+              Confirm Password is required
+            </div>
+            <div *ngIf="signupForm.errors?.['mismatch'] &&
+                      (signupForm.get('confirmPassword')?.touched || signupForm.get('confirmPassword')?.dirty)"
+                 class="error-message">
+              Passwords do not match
+            </div>
+          </div>
+
+          <button class="btn btn-primary" type="submit" [disabled]="!signupForm.valid">Create Account</button>
+        </form>
+        <p style="margin-top: 1rem; text-align: center">
+          Already registered? <a class="link-text" routerLink="/login">Login here</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
