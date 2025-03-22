@@ -56,6 +56,22 @@ Four mini-applications demonstrating event handling and DOM manipulation:
 3. BMI Calculator - Calculates body mass index and health classification
 4. Value Permutation - Demonstrates variable swapping with destructuring
 
+### [Lab 6: React & Angular Authentication Systems](TP6-React_Angular)
+- Implemented authentication systems in two different frontend frameworks:
+  - [React Authentication System](TP6-React_Angular/react-auth-system/) - Built with React 19, React Router, and CryptoJS
+  - [Angular Authentication System](TP6-React_Angular/angular-auth-system/) - Built with Angular 19, Angular Router, and Reactive Forms
+- Features:
+  - User registration with validation
+  - Secure login with SHA-256 password hashing
+  - Protected dashboard routes
+  - Responsive design with dark mode support
+  - JSON Server backend for API integration
+- Demonstrates:
+  - Authentication flows and security practices
+  - Framework-specific approaches to common functionality
+  - Modern UI/UX design principles
+  - State management and form validation techniques
+
 ## Getting Started
 
 Clone the repository:
@@ -72,7 +88,8 @@ web-technologies/
 ├── TP2-Google Homepage Clone/    # Google homepage recreation
 ├── TP3-portfolio/                # Personal portfolio website
 ├── TP4-Introduction To JavaScript/ # JavaScript exercises
-└── TP5-events/                   # JavaScript event handling applications
+├── TP5-events/                   # JavaScript event handling applications
+└── TP6-React_Angular/            # React & Angular authentication systems
 ```
 
 ## Technologies Used

@@ -1,6 +1,6 @@
 # Authentication Systems Lab - Web Technologies
 
-This repository contains two implementations of authentication systems developed as part of the Web Technologies laboratory at École Normale Supérieure de l'Enseignement Technique (ENSET) ElMohammadia. The purpose of this lab is to demonstrate authentication workflows in both React and Angular frameworks.
+This folder contains two implementations of authentication systems developed as part of the Web Technologies laboratory at École Normale Supérieure de l'Enseignement Technique (ENSET) ElMohammadia. The purpose of this lab is to demonstrate authentication workflows in both React and Angular frameworks.
 
 ## Overview
 
